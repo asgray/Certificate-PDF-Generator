@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Certificate Generator</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="/stylesheets/main.css" rel="stylesheet"> -->
+    </head>
+    <body>
+       
+    </div>
+        <!--Input Form-->
+      <div class="container">
+    <div class="row">
+        <h1>Generate a Certificate</h1>
+       <div class="col-xs-12">
+            <form action="" method="">
+              <div class="col-xs-6">
+                <div class="form-group">
+                    <label> Logo URL
+                      <input class="form-control" type="url" name="logoURL" placeholder="Logo URL" value="https://thumbs.dreamstime.com/z/colorful-vision-camera-focus-lens-concept-elements-icon-logo-enjoy-51849444.jpg" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                  <label>Date
+                    <input required class="form-control" type="date" name="date" value = "2017-09-10" >
+                  </label>                    
+                </div>
+                <div class="form-group">
+                  <label> Name
+                    <input class="form-control" type="text" name="name" placeholder="Name" value="This Guy" required>
+                  </label>                    
+                </div>
+                <div class="form-group">
+                  <label> Course Title
+                    <input class="form-control" type="text" name="courseTitle" placeholder="Course Title" value="Certificate PDF Generator API" required>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label> Course Description
+                    <input class="form-control" type="text" name="courseDesc" placeholder="Course Description"  value=" a 9 week non-credit course authorized by That Guy and offered through That Other Guy" required>
+                  </label>                    
+                </div>
+                <div class="form-group">
+                  <label> Signature Image URL
+                    <input class="form-control" type="url" name="sigImgURL" placeholder="Signature Image URL"  value="https://thumb7.shutterstock.com/display_pic_with_logo/2837842/609982211/stock-vector-arabic-calligraphy-ramadan-kareem-vector-lettering-609982211.jpg" required>
+                  </label>                    
+                </div>
+              </div>
+              <div class="col-xs-6">
+                 <div class="form-group">
+                  <label> Signature Block
+                    <input class="form-control" type="text" name="sigBlock" placeholder="Signature Block String" value="That Guy. You know, works for That Other Guy at some place." required>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label> Verification
+                    <input class="form-control" type="text" name="verification" placeholder="Verification String" value="Verify at That Other Guy's website. That Other Guy has confirmed the identity of This Guy and their participation in the course." required>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label> Issuing Organization URL
+                     <input class="form-control" type="url" name="issuingURL" placeholder="Issuing Logo URL"  value="https://thumb1.shutterstock.com/display_pic_with_logo/1573991/418225237/stock-vector-logo-college-418225237.jpg" required>
+                  </label>                   
+                </div>
+                <div class="form-group">
+                  <label> Earned With Distiction
+                    <label> Yes
+                        <input type="radio" name="distinction" value=true checked="checked">
+                    </label>
+                    <label> No
+                        <input type="radio" name="distinction" value=false>
+                    </label>
+                  </label>                    
+                </div>
+                <div class="form-group">
+                  <label> Background Image URL
+                    <input class="form-control" type="url" name="tempFill" placeholder="Template" value="https://thumbs.dreamstime.com/z/award-certificate-template-5991469.jpg" required>
+                  </label>
+                </div>
+                <div class="form-group">
+                    <a class="btn btn-primary" onclick="getData(this.form)">Generate PDF</a>
+                </div>
+                <p>Make sure you have permission for the URLs you enter. If you don't own the image, they won't work. The download should start automatically, so be sure your browser is not blocking it.</p>
+              </div>
+            </form>
+       </div>
+    </div>
+</div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+    <script type="text/javascript" src="./certAPI.js"></script>
+</html>
